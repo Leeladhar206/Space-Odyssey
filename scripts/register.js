@@ -24,12 +24,19 @@ form.addEventListener("submit", function () {
   //   console.log(userdata);
 
   if (name.value == "") {
-    alert("Please fill the name");
-    text.innerText = "please fill the name";
+    // alert("Please fill the name");
+    text.innerText = "Please fill the name";
+    text.style.color="#FC541D"
   } else if (email.value == "") {
-    alert("Please fill the email");
+    // alert("Please fill the email");
+    text.innerText = "Please fill the email";
+    text.style.color="#FC541D"
+
   } else if (password.value == "") {
-    alert("Please fill the password");
+    // alert("Please fill the password");
+    text.innerText = "Please fill the password";
+    text.style.color="#FC541D"
+
   } else {
     let flag = false;
 

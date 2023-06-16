@@ -1,6 +1,8 @@
 let form = document.querySelector("form");
 let password = document.querySelector("#password");
 let email = document.querySelector("#email");
+let text = document.querySelector("p");
+
 
 let userdata = localStorage.getItem("user-data");
 if (userdata === null) {
@@ -27,7 +29,10 @@ form.addEventListener("submit", function () {
   if (flag == true) {
     alert("Sign in Successful");
     window.location.href = "./index.html";
+
   } else {
-    alert("Wrong Credentials");
+    // alert("Wrong Credentials");
+    text.innerText = "Wrong credentials";
+    text.style.color="#FC541D"
   }
 });
