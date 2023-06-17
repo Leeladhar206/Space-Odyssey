@@ -1,40 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voyage Via</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/?size=512&id=LdBR9a3vFiwK&format=png"
+    />
 
-<link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/homepage.css" />
+  </head>
+  <body>
     <div id="outer">
-        <img src="images\Voyage Via.jpg" alt="">
+      <img src="images\Voyage Via.jpg" alt="" />
     </div>
     <div id="nav">
-        <div>
-            <h2>Voyage Via</h2>
-        </div>
-        <div>
-         <p>Discover</p>
-         <p>Community</p>
-         <p>Special Deals</p>
-         <p>About Us</p>
-         <p>Sign In</p>
-         <button><p>Register</p></button>
-        </div>
+      <div>
+        <img src="images/Voyage Via logo.png" alt="" />
+        <h2>Voyage Via</h2>
+      </div>
+      <div>
+        <p>Discover</p>
+        <p>Community</p>
+        <p>Special Deals</p>
+        <p>About Us</p>
+        <p><a href="./log-in.html" target="_blank">Log-In</a></p>
+
+        <button>
+          <a href="./register.html" target="_blank"><p>Register</p></a>
+        </button>
+      </div>
     </div>
     <div id="center">
-         <h1>   Enjoy Your </h1>
-         <h1>Dream Vocation</h1>
-         <p>We alsways make our customers happy by providing many choices.</p>
+      <h1>Enjoy Your</h1>
+      <h1>Dream Vocation</h1>
+      <p>We alsways make our customers happy by providing many choices.</p>
     </div>
     <div id="explore">
-        <div><button><p>Explore Now</p></button></div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
+      <div>
+        <button><p>Explore Now</p></button>
+      </div>
+      <div>
+        <div>
+          <!-- <img
+            src="https://img.icons8.com/?size=512&id=85149&format=png"
+            alt=""
+          /> -->
 
+          <button class="primary" onclick="window.dialog.showModal();">
+            search
+          </button>
+
+          <dialog id="dialog">
+            <br />
+            <input id="cityname" type="text" />
+            <br /><br />
+            <button id="search">submit</button>
+            <button
+              onclick="window.dialog.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+        </div>
+        <div>
+          <p class="pgray">Destination</p>
+          <p id="city" class="pcolor">Monaco,Italy</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <!-- <img
+            src="https://img.icons8.com/?size=512&id=58437&format=png"
+            alt=""
+          /> -->
+          <p>price</p>
+        </div>
+        <div>
+          <p class="pgray">AveragePrice</p>
+          <p id="price" class="pcolor">$500-$800</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <!-- <img
+            src="https://img.icons8.com/?size=512&id=FG3gkLNcvBVx&format=png"
+            alt=""
+          /> -->
+          <input id="date" type="date" />
+        </div>
+        <div>
+          <p class="pgray">Date</p>
+          <p id="datetext" class="pcolor">2023-06-14</p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+
+<script src="/windy-picture-8509/scripts/homepage.js"></script>

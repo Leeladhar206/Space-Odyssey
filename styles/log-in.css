@@ -1,0 +1,99 @@
+* body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+img {
+  width: 60%;
+  height: 80%;
+  margin: 70px 0px 0px 310px;
+}
+#box {
+  width: 60%;
+  height: 80%;
+  margin: 70px 0px 0px 0px;
+  background-color: white;
+}
+
+#outer {
+  display: flex;
+}
+
+#first {
+  width: 50%;
+  height: 713px;
+  background-color: #9da897;
+  margin: auto;
+}
+#second {
+  width: 50%;
+  height: 713px;
+
+  background-color: #3a4f64;
+}
+
+form {
+  margin: 5% auto;
+  width: 300px;
+  min-height: 400px;
+  background: white;
+  padding: 15% 10% 5%;
+  border-radius: 2.5%;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  color: #3a4f64;
+}
+
+input {
+  margin: 5% 0;
+  border: none;
+  width: 100%;
+  font-size: 1.5em;
+  padding: 0 0 2%;
+  background: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+#name {
+  border-bottom: 2px solid #3a4f64;
+}
+
+#email {
+  border-bottom: 2px solid #3a4f64;
+}
+
+#password {
+  border-bottom: 2px solid #3a4f64;
+}
+
+label {
+  color: #9da897;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-family: 'Poppins', sans-serif;
+}
+#button {
+  width: 50%;
+  height: 45px;
+  background-color: #9da897;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 3px;
+  font-size: 20px;
+  margin: 40px 0px 0px 150px;
+}
+#button:hover {
+  background-color: #596950;
+  cursor: pointer;
+}

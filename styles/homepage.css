@@ -1,0 +1,262 @@
+* body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#nav {
+  width: 77%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 100px;
+  margin-left: 180px;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+}
+#nav div {
+  display: flex;
+  gap: 30px;
+}
+#nav img {
+  width: 15%;
+  margin-left: 10px;
+}
+#nav h2 {
+  margin-left: -20px;
+}
+#nav p {
+  cursor: pointer;
+}
+button {
+  width: 120px;
+  height: 50px;
+  border: none;
+  background-color: #011e3f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+#center {
+  width: 40%;
+  position: absolute;
+  top: 200px;
+  margin-left: 460px;
+  text-align: center;
+}
+#center h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+}
+#center > h1:nth-child(2) {
+  margin-top: -60px;
+}
+#center p {
+  font-family: poppins;
+  font-size: 17px;
+  margin-top: -20px;
+}
+button a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+p a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+#explore {
+  width: 62%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 510px;
+  margin-left: 290px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#explore div {
+  width: 22%;
+}
+#explore > div:nth-child(1) > button {
+  width: 90%;
+  height: 80px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fc541d;
+  margin-left: 10px;
+}
+#explore > div:nth-child(1) > button > p {
+  font-size: 20px;
+}
+#explore img {
+  width: 35px;
+  height:35px;
+  /* height: 10%; */
+  
+  /* position: absolute; */
+}
+#explore > div:nth-child(2) {
+  display: flex;
+}
+#explore > div:nth-child(2) > div:nth-child(1) {
+  width: 27%;
+  height: 70%;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#explore > div:nth-child(3) {
+  display: flex;
+}
+#explore > div:nth-child(3) > div:nth-child(1) {
+  width: 27%;
+  height: 70%;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#explore > div:nth-child(4) {
+  display: flex;
+}
+#explore > div:nth-child(4) > div:nth-child(1) {
+  width: 27%;
+  height: 70%;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pgray {
+  padding-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #c5ccd4;
+}
+.pcolor {
+  padding-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #383d93;
+  margin-top: -12px;
+}
+
+input[type="date"]{
+  background-color:transparent;
+  border: none;
+  /* color:transparent;
+   */
+  width: 50px;
+  height:50px;
+  cursor: pointer;
+}
+#datetext{
+height:20px;
+width:120px
+}
+#price{
+  height:20px;
+  width:140px;
+  }
+ #city{
+    height:20px;
+    width:150px
+    }
+
+
+dialog {
+	padding: 1rem 3rem;
+	background: white;
+	max-width: 400px;
+	padding-top: 2rem;
+	border-radius: 20px;
+	border: 0;
+	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+	animation: fadeIn 1s ease both;
+	&::backdrop {
+		animation: fadeIn 1s ease both;
+		background: rgb(255 255 255 / 40%);
+		z-index: 2;
+		backdrop-filter: blur(20px);
+	}
+	.x {
+		filter: grayscale(1);
+		border: none;
+		background: none;
+		position: absolute;
+		top: 90px;
+		right: 20px;
+		transition: ease filter, transform 0.3s;
+		cursor: pointer;
+		transform-origin: center;
+		&:hover {
+			filter: grayscale(0);
+			transform: scale(1.1);
+		}
+	}
+	h2 {
+		font-weight: 600;
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
+	p {
+		font-size: 1rem;
+		line-height: 1.3rem;
+		padding: 0.5rem 0;
+		a {
+			&:visited {
+				color: rgb(var(--vs-primary));
+			}
+		}
+	}
+}
+
+button.primary {
+	display: inline-block;
+  width:30px;
+	font-size: 0.8rem;
+	color: #680f0f;
+	background: rgb(var(--vs-primary) / 100%);
+	padding-left:  -20px;
+	border-radius: 17px;
+	transition: background-color 0.1s ease;
+	box-sizing: border-box;
+	transition: all 0.25s ease;
+	border: 0;
+	cursor: pointer;
+  margin-left: -25px;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#search{
+  width:40%;
+  height:30px;
+}
+#cityname{
+  width:80%;
+  height:30px;
+}
