@@ -14,6 +14,7 @@ img {
   height: 80%;
   margin: 70px 0px 0px 310px;
   background-color: white;
+  box-sizing: border-box;
 }
 
 #outer {
@@ -56,7 +57,7 @@ input {
   border: none;
   width: 100%;
   font-size: 1.5em;
-  padding: 0 0 2%;
+  /* padding: 0 0 2%; */
   background: none;
 }
 
@@ -95,4 +96,14 @@ label {
 #button:hover {
   background-color: #596950;
   cursor: pointer;
+}
+#text{
+  color: #3a4f64;
+  font-family: 'Poppins';
+
+}
+#href{
+  font-family: 'Poppins';
+  color: #3a4f64;
+
 }

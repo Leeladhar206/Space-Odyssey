@@ -31,39 +31,41 @@
         <p>Discover</p>
         <p>Community</p>
         <p>Special Deals</p>
-        <p>About Us</p>
-        <p><a href="./log-in.html" target="_blank">Log-In</a></p>
+        <p><a href="./about.html" >About Us</a></p>
+        <p><a href="./log-in.html">Log-In</a></p>
 
         <button>
-          <a href="./register.html" target="_blank"><p>Register</p></a>
+          <a href="./register.html"
+          ><p>Register</p></a>
         </button>
       </div>
     </div>
     <div id="center">
       <h1>Enjoy Your</h1>
       <h1>Dream Vocation</h1>
-      <p>We alsways make our customers happy by providing many choices.</p>
+      <p>We always make our customers happy by providing many choices.</p>
     </div>
     <div id="explore">
       <div>
-        <button><p>Explore Now</p></button>
+        <button id="exbutton"><p>Explore Now</p></button>
       </div>
       <div>
         <div>
-          <!-- <img
-            src="https://img.icons8.com/?size=512&id=85149&format=png"
-            alt=""
-          /> -->
-
+          
           <button class="primary" onclick="window.dialog.showModal();">
-            search
+            <img
+              src="https://img.icons8.com/?size=512&id=85149&format=png"
+              alt=""
+            />
           </button>
 
           <dialog id="dialog">
-            <br />
+            <p>From:</p>
             <input id="cityname" type="text" />
-            <br /><br />
-            <button id="search">submit</button>
+            <br />
+            <p>To:</p>
+            <input type="text" name="" id="to"><br><br>
+            <button id="search">submit</button><br><br>
             <button
               onclick="window.dialog.close();"
               aria-label="close"
@@ -74,17 +76,17 @@
           </dialog>
         </div>
         <div>
-          <p class="pgray">Destination</p>
-          <p id="city" class="pcolor">Monaco,Italy</p>
+          <p id="tocity" class="pgray">Destination</p>
+          <p id="city" class="pcolor">Visakhapatnam</p>
         </div>
       </div>
       <div>
         <div>
-          <!-- <img
+          <img
             src="https://img.icons8.com/?size=512&id=58437&format=png"
             alt=""
-          /> -->
-          <p>price</p>
+          />
+          <!-- <p>price</p> -->
         </div>
         <div>
           <p class="pgray">AveragePrice</p>
@@ -98,6 +100,7 @@
             alt=""
           /> -->
           <input id="date" type="date" />
+    
         </div>
         <div>
           <p class="pgray">Date</p>

@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
   width: 100%;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 img {
@@ -96,4 +98,8 @@ label {
 #button:hover {
   background-color: #596950;
   cursor: pointer;
+}
+#text{
+  color: #3a4f64;
+  text-align: right;
 }

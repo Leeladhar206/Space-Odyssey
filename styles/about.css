@@ -1,0 +1,28 @@
+* body{
+    padding:0px;
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#outer{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding:10%;
+    
+    background-color: #3a4f64;
+}
+#main{
+    background-color: #9da897;
+    width:80%;
+    height:80%;
+     padding:5%;
+}
+h2{
+    text-align:left;
+    color: black;
+}
+p{
+    text-align:left;
+    color: #3a4f64
+}
