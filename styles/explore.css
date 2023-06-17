@@ -1,0 +1,14 @@
+#container {
+    margin: auto;
+    background-color: #3a4f64;
+    margin-top: 100px;
+  }
+  #imgdiv {
+      width:80%;
+      margin: auto;
+      background-color: #596950;
+    
+  }
+  #container > div > img {
+    width: 100%;
+  }

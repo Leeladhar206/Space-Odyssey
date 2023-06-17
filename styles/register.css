@@ -48,7 +48,7 @@ h2 {
   padding: 0;
   margin: 0;
   /* text-align:center; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #3a4f64;
 }
 
@@ -82,14 +82,14 @@ label {
   color: #9da897;
   text-transform: uppercase;
   font-size: 0.8em;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 #button {
   width: 50%;
   height: 45px;
   background-color: #9da897;
   color: white;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   padding-top: 3px;
   font-size: 20px;
 }
@@ -97,13 +97,38 @@ label {
   background-color: #596950;
   cursor: pointer;
 }
-#text{
+#text {
   color: #3a4f64;
-  font-family: 'Poppins';
-
+  font-family: "Poppins";
 }
-#href{
-  font-family: 'Poppins';
+#href {
+  font-family: "Poppins";
   color: #3a4f64;
+}
 
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+  img {
+    width: 75%;
+  }
+  #box {
+    width: 75%;
+    margin: 70px 0px 0px 140px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #second {
+    display: none;
+  }
+  #box {
+    margin: 70px 0px 0px 120px;
+  }
+  #first {
+    width: 100%;
+  }
+  form {
+    width: 250px;
+  }
+  #button {
+    height: 35px;
+  }
 }
