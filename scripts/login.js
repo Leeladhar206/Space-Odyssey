@@ -16,19 +16,21 @@ form.addEventListener("submit", function () {
 
   console.log("hi");
   let flag = false;
-
+  let name=null;
   for (let i = 0; i < userdata.length; i++) {
     if (
       email.value == userdata[i].email &&
       password.value == userdata[i].password
     ) {
       flag = true;
+      name=userdata[i].name;
     }
   }
 
   if (flag == true) {
     alert("Sign in Successful");
-    window.location.href = "./index.html";
+    window.location.href = "./logout.html";
+    localStorage.setItem("profile", JSON.stringify(name));
 
   } else {
     // alert("Wrong Credentials");

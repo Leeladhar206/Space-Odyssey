@@ -18,6 +18,7 @@ form.addEventListener("submit", function () {
     name: name.value,
     email: email.value,
     password: password.value,
+    status: "false",
   };
 
   //   console.log(data);
@@ -26,17 +27,15 @@ form.addEventListener("submit", function () {
   if (name.value == "") {
     // alert("Please fill the name");
     text.innerText = "Please fill the name";
-    text.style.color="#FC541D"
+    text.style.color = "#FC541D";
   } else if (email.value == "") {
     // alert("Please fill the email");
     text.innerText = "Please fill the email";
-    text.style.color="#FC541D"
-
+    text.style.color = "#FC541D";
   } else if (password.value == "") {
     // alert("Please fill the password");
     text.innerText = "Please fill the password";
-    text.style.color="#FC541D"
-
+    text.style.color = "#FC541D";
   } else {
     let flag = false;
 
@@ -53,7 +52,7 @@ form.addEventListener("submit", function () {
 
       localStorage.setItem("user-data", JSON.stringify(userdata));
       alert("Successfully registerd");
-      window.location.href = "./index.html";
+      window.location.href = "./log-in.html";
     }
   }
 });
