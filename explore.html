@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore</title>
-    <link rel="stylesheet" href="./styles/explore.css">
-    <link rel="icon" href="https://img.icons8.com/?size=512&id=LdBR9a3vFiwK&format=png">
+    <link rel="stylesheet" href="./styles/explore.css" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/?size=512&id=LdBR9a3vFiwK&format=png"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="imgdiv">
+        <img src="https://wallpapercave.com/wp/wp8922393.jpg" alt="" />
+        <h3>LIVE YOUR LIFE BY A COMPASS, NOT A CLOCK. – ERICA JONG</h3>
+      </div>
+      <div id="center">
+        <div id="bar">
+          <div>
+            <p>Search:</p>
+            <input type="text" id="search" placeholder="Search City" />
+          </div>
 
-</head>
-<body>
-    <div id="container"></div>
-       <div id="imgdiv">
-        <img src="https://c1.wallpaperflare.com/preview/353/196/41/letters-scrabble-words-wooden.jpg" alt="">
-       </div>
-</body>
+          <div>
+            <p>Filter:</p>
+            <select name="" id="filter">
+              <option value="">type</option>
+              <option value="Luxury">Luxury</option>
+              <option value="Deluxe">Deluxe</option>
+            </select>
+          </div>
+
+          <div>
+            <p>Sort by:</p>
+            <select name="" id="sort">
+              <option value="">Price</option>
+              <option value="lh">Low-High</option>
+              <option value="hl">High-low</option>
+            </select>
+          </div>
+
+          <button>
+            <a href="./logout.html"><p>Space Odyssey</p></a>
+          </button>
+        </div>
+      </div>
+      <div id="hotels"></div>
+    </div>
+  </body>
 </html>
 
-<script src="./scripts/explore.js"></script>
+<script src="/windy-picture-8509/scripts/explore.js"></script>

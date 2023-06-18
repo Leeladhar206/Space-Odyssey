@@ -10,6 +10,7 @@ if (profile === null) {
 
 regp.innerText= profile.toUpperCase();
 
+
 let p = document.querySelector("#datetext");
 let datein = document.querySelector("#date");
 
