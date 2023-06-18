@@ -24,6 +24,9 @@ let exbutton = document.querySelector("#exbutton");
 
 datein.addEventListener("input", function () {
   p.innerText = datein.value;
+  let c = Math.random() * 1000;
+  let num = Math.trunc(c) + 200;
+  price.innerText = "₹" + Number(num+50) + "-" + "₹" + Number(num + 100);
 });
 
 search.addEventListener("click", function () {
@@ -34,6 +37,7 @@ search.addEventListener("click", function () {
   let num = Math.trunc(c) + 200;
   price.innerText = "₹" + num + "-" + "₹" + Number(num + 150);
 });
+
 exbutton.addEventListener("click", function () {
-  window.location.href ="./explore.html"
+  window.location.href="./explore.html"
 });
