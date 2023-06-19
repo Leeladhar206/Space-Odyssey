@@ -8,7 +8,8 @@ if (profile === null) {
   profile = JSON.parse(profile);
 }
 
-regp.innerText= profile.toUpperCase();
+let profilename= profile.split(" ");
+regp.innerText= profilename[0].toUpperCase();
 
 
 let p = document.querySelector("#datetext");
