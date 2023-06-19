@@ -54,9 +54,9 @@ h3 {
   border-radius: 10px;
   margin-top: 20px;
 }
-#hotels > div:hover {
-  transition: 1s;
-  transform: scale(1.03);
+#hotels >div:hover{
+    transition: 1s;
+    transform: scale(1.03);
 }
 #hotels div > h4 {
   background-color: white;
@@ -151,63 +151,66 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
 }
-a {
-  text-decoration: none;
+a{
+    text-decoration: none;
 }
+
 
 @media screen and (min-width: 701px) and (max-width: 1100px) {
-  img {
-    width: 75%;
+    img {
+      width: 75%;
+    }
+    
+    #hotels{
+     grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #search{
+        width:90px;
+        height:22px;
+        margin-left: 5px;
+    }
+    #filter{
+         width:90px;
+        height:22px;
+        margin-left: 10px;
+    }
+    #sort{
+         width:90px;
+        height:22px;
+        margin-left: 5px;
+    }
   }
-
-  #hotels {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #search {
-    width: 90px;
-    height: 22px;
-    margin-left: 5px;
-  }
-  #filter {
-    width: 90px;
-    height: 22px;
-    margin-left: 10px;
-  }
-  #sort {
-    width: 90px;
-    height: 22px;
-    margin-left: 5px;
-  }
-}
 
 @media screen and (max-width: 700px) {
-  img {
-    width: 75%;
+
+       img {
+      width: 75%;
+    }
+    
+    #hotels{
+     grid-template-columns: repeat(1, 1fr);
+    }
+    #hotels div{
+        width:60%;
+    }
+    #search{
+        width:70px;
+        height:20px;
+        margin-left: 2px;
+    }
+    #filter{
+         width:70px;
+        height:20px;
+        margin-left: 2px;
+    }
+    #sort{
+         width:70px;
+        height:20;
+        margin-left: 2px;
+    }
+    #bar button{
+        display: none;
+    }
   }
 
-  #hotels {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  #hotels div {
-    width: 60%;
-  }
-  #search {
-    width: 70px;
-    height: 20px;
-    margin-left: 2px;
-  }
-  #filter {
-    width: 70px;
-    height: 20px;
-    margin-left: 2px;
-  }
-  #sort {
-    width: 70px;
-    height: 20;
-    margin-left: 2px;
-  }
-  #bar button {
-    display: none;
-  }
-}
