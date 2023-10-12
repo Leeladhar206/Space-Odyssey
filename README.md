@@ -19,7 +19,7 @@ Online travel agency application that allows users to explore hotel information.
 ## Screnshots :
 
 ### Homepage:
-<img src="https://i.ibb.co/0Xt7nFt/Screenshot-2023-10-12-180551.png" alt="Homepage" />
+<img src="https://i.ibb.co/BPNpfrN/Screenshot-2023-10-12-180551.png" alt="Homepage" />
 
 ### Login Page:
 <img src="https://i.ibb.co/NW9QQBh/Screenshot-2023-10-12-180612.png" alt="Login Page" />
